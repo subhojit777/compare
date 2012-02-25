@@ -1,0 +1,24 @@
+*, html, body, p, img, span, label {margin: 0px; padding: 0px;}
+
+div#header.with-secondary-menu {
+	background-color: blue;
+}
+
+div.section.clearfix img {
+	width: 10px;
+	height: 10px;
+}
+
+li.first.last a:hover {
+	color: #228b22;
+	text-decoration: none;
+}
+
+div#block-current-posts-current-posts h2 {
+	background-color: #ccc;
+	color: red;
+}
+
+div.content {
+	color: green;
+}

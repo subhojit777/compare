@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+div #block-block-1  {
+	width: 100%;
+	background-color: gray;
+	z-index: 2;
+}
+
+/**#compare_block  {
+	display: none;
+}**/
+
+.div_image  {
+	display: inline;
+	margin: 10px;
+}
+
+.image {
+	border: 1px solid #ccc;
+}
+
+#aclose:HOVER {
+	cursor: pointer;
+}
+
+.remove_item:HOVER {
+	cursor: pointer;
+}

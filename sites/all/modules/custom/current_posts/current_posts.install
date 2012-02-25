@@ -1,0 +1,72 @@
+<?php
+	/**
+	* @file
+	* Install, update and uninstall functions for the current_posts module.
+	*
+	*/
+
+	/**
+	* Implements current_posts_install().
+	*/
+	function current_posts_install()
+	{
+		db_insert ('current_posts')
+		->fields (
+			array (
+				'title' => 'all',
+				'created' => 'hello',
+			   'status' => 1,
+			)
+		)
+		->execute();
+	}
+	
+	/**
+	* Implements current_posts_schema().
+	*/
+	function current_posts_schema()
+	{
+		$schema['current_posts'] = array (
+			'description' => 'The base table for current posts.',
+			'fields' => array (
+				'cpid' => array (
+					'description' => 'The primary identifier for current posts.',
+					'type' => 'serial',
+					'unsigned' => TRUE,
+					'not null' => TRUE,
+				),
+			
+				'title' => array (
+					'description' => 'This column specifies the title.',
+					'type' => 'varchar',
+					'length' => 100,
+					'not null' => TRUE,
+					'default' => '',
+				),
+			
+				'created' => array (
+					'description' => 'This column specifies the creation date of post.',
+					'type' => 'varchar',
+					'length' => 50,
+					'not null' => TRUE,
+				),
+				
+				'status' => array (
+				    'description' => 'This column specifies whether module is enabled or not.',
+				    'type' => 'int',
+				    'not null' => TRUE,
+				  )
+			),
+			'primary key' => array ('cpid'),
+		);
+		return $schema;
+	}
+	
+	/**
+	* Implements current_posts_uninstall()
+	*/
+	/**function current_posts_uninstall()
+	{
+		variable_del ('current_posts');
+	}*/
+?>

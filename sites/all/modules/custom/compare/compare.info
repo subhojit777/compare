@@ -1,0 +1,4 @@
+name = compare
+description = enables comparison of entities
+dependencies[] = views
+core = 7.x
