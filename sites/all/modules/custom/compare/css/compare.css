@@ -1,13 +1,22 @@
 @CHARSET "UTF-8";
-div #block-block-1  {
+
+#compare_cart {
+  display: none;
+  width: 100%;
+  background-color: gray;
+  z-index: 2;
+}
+
+/**div #block-block-1  {
 	width: 100%;
 	background-color: gray;
 	z-index: 2;
-}
-
-/**#compare_block  {
-	display: none;
 }**/
+
+#compare_block  {
+  display: inline;
+	position: fixed;
+}
 
 .div_image  {
 	display: inline;
@@ -15,13 +24,14 @@ div #block-block-1  {
 }
 
 .image {
+  display: inline;
 	border: 1px solid #ccc;
 }
 
-#aclose:HOVER {
+#aclose:HOVER, #aclearlist:HOVER {
 	cursor: pointer;
 }
 
-.remove_item:HOVER {
+.remove_item {
 	cursor: pointer;
 }
