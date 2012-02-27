@@ -2,7 +2,6 @@
 
 #compare_cart {
   display: none;
-  width: 100%;
   background-color: gray;
   z-index: 2;
 }
@@ -13,10 +12,9 @@
 	z-index: 2;
 }**/
 
-#compare_block  {
+/**#compare_block  {
   display: inline;
-	position: fixed;
-}
+}**/
 
 .div_image  {
 	display: inline;
@@ -35,3 +33,8 @@
 .remove_item {
 	cursor: pointer;
 }
+
+.compare_cart_options_css {
+  margin: 5px;
+  display: inline;
+} 

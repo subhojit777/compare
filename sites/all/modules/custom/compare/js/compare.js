@@ -18,7 +18,7 @@
 			
 			document.getElementById("btn_compare").disabled = true;
 			
-			$(".compare").click(function(){
+			$(".compare").live("click", function(){
 //				alert($(this).attr("id"));
 //				if (Drupal.ajax)	{
 				var checkbox_id = $(this).attr("id");
@@ -143,10 +143,15 @@
 //					document.write("no ajax called");
 //				}
 				$("#compare_cart").slideDown(500, function(){
-					$("#compare_block").css("display", "block");
-					$("#compare_block").css("position", "relative");
-					$("#compare_block").css("top", "0");
-				});
+					$(this).css("display", "static");
+					$(this).css("position", "relative");
+					$(this).css("top", "25%");
+				}); 
+//				function(){
+//					$("#compare_block").css("display", "block");
+//					$("#compare_block").css("position", "relative");
+//					$("#compare_block").css("top", "0");
+//				});
 				
 //				if (flag_item4 == false){
 //					$(":checkbox").attr("disabled", true);
